@@ -16,11 +16,14 @@ public class BlobServiceTests
         _mockClient = new Mock<BlobServiceClient>();
     }
 
-    [Fact]
-    public async Task IsVersionMatch_GivenAVersionMatchingTheCurrentlyStored_ReturnsTrue()
+    [Theory]
+    [InlineData("1.2")]
+    [InlineData("v3.5")]
+    [InlineData("V2-beta")]
+    public async Task IsVersionMatch_GivenAVersionMatchingTheCurrentlyStored_ReturnsTrue(string theoreticalVersion)
     {
         // Arrange
-        var blobData = BinaryData.FromString("1.2");
+        var blobData = BinaryData.FromString(theoreticalVersion);
 
         var downloadResult = BlobsModelFactory.BlobDownloadResult(
             content: blobData
@@ -47,12 +50,10 @@ public class BlobServiceTests
             .Setup(x => x.GetBlobContainerClient(It.IsAny<string>()))
             .Returns(mockContainerClient.Object);
 
-        var service = new BlobService(
-            _mockClient.Object,
-            NullLoggerFactory.Instance);
+        var service = new BlobService(_mockClient.Object, NullLoggerFactory.Instance);
 
         // Act
-        bool returned = await service.IsVersionMatch("1.2");
+        bool returned = await service.IsVersionMatch(theoreticalVersion);
 
         // Assert
         mockBlobClient.Verify(c => c.DownloadContentAsync(), Times.Once());
