@@ -1,0 +1,22 @@
+name: DfE
+services:
+  azurite:
+    image: mcr.microsoft.com/azure-storage/azurite:3.10.0
+    container_name: blob-storage
+    ports:
+      - 10000:10000
+      - 10001:10001
+      - 10002:10002
+    volumes:
+      - ./azurite-data:/data
+    command: azurite --blobHost 0.0.0.0 --queueHost 0.0.0.0 --location /data --loose --skipApiVersionCheck
+    restart: unless-stopped
+  
+  wiremock:
+    image: wiremock/wiremock:3.13.2
+    container_name: dfe-api-mock
+    ports:
+      - 8080:8080
+    volumes:
+      - ./wiremock/mappings:/home/wiremock/mappings
+      - ./wiremock/__files:/home/wiremock/__files

@@ -1,0 +1,1468 @@
+{
+    "filters": [
+        {
+            "id": "GHrgr",
+            "column": "disadvantage_status",
+            "label": "Disadvantage status",
+            "hint": "",
+            "options": [
+                {
+                    "id": "eaHmu",
+                    "label": "Disadvantaged"
+                },
+                {
+                    "id": "ThfoP",
+                    "label": "Not known to be disadvantaged"
+                },
+                {
+                    "id": "hs52y",
+                    "label": "Total"
+                }
+            ]
+        },
+        {
+            "id": "3rR8u",
+            "column": "establishment_type_group",
+            "label": "Establishment type",
+            "hint": "",
+            "options": [
+                {
+                    "id": "m2Jh9",
+                    "label": "Academy converter"
+                },
+                {
+                    "id": "gFifO",
+                    "label": "Academy sponsor led"
+                },
+                {
+                    "id": "AHKXG",
+                    "label": "All state funded"
+                },
+                {
+                    "id": "V4Im5",
+                    "label": "Free schools"
+                },
+                {
+                    "id": "PyYhe",
+                    "label": "Local authority maintained"
+                },
+                {
+                    "id": "1qyqi",
+                    "label": "State funded mainstream schools"
+                }
+            ]
+        },
+        {
+            "id": "28Wlz",
+            "column": "sex",
+            "label": "Sex",
+            "hint": "",
+            "options": [
+                {
+                    "id": "NIgDC",
+                    "label": "Boys"
+                },
+                {
+                    "id": "wXBbx",
+                    "label": "Girls"
+                },
+                {
+                    "id": "oclmX",
+                    "label": "Other"
+                },
+                {
+                    "id": "9884v",
+                    "label": "Total"
+                }
+            ]
+        },
+        {
+            "id": "ysoaB",
+            "column": "sen_provision",
+            "label": "Special education needs provision",
+            "hint": "",
+            "options": [
+                {
+                    "id": "dR7k0",
+                    "label": "All SEN provision"
+                },
+                {
+                    "id": "uLz2o",
+                    "label": "Education, health and care plan"
+                },
+                {
+                    "id": "l6uDc",
+                    "label": "No SEN provision"
+                },
+                {
+                    "id": "U3pxR",
+                    "label": "SEN support / SEN without an EHC plan"
+                },
+                {
+                    "id": "oWF8m",
+                    "label": "Total"
+                },
+                {
+                    "id": "rGW7N",
+                    "label": "Unknown SEN provision"
+                }
+            ]
+        },
+        {
+            "id": "9ko4v",
+            "column": "subject",
+            "label": "Subjects",
+            "hint": "",
+            "options": [
+                {
+                    "id": "Wr82b",
+                    "label": "Grammar, punctuation and spelling"
+                },
+                {
+                    "id": "EHOqF",
+                    "label": "Maths"
+                },
+                {
+                    "id": "Q7Awb",
+                    "label": "Reading"
+                },
+                {
+                    "id": "98L4v",
+                    "label": "Reading, writing and maths"
+                },
+                {
+                    "id": "2NKlz",
+                    "label": "Science"
+                },
+                {
+                    "id": "PWheb",
+                    "label": "Writing"
+                }
+            ]
+        }
+    ],
+    "indicators": [
+        {
+            "id": "qISjG",
+            "column": "progress_measure_score",
+            "label": "Average progress score",
+            "decimalPlaces": 2
+        },
+        {
+            "id": "a8bLP",
+            "column": "average_scaled_score",
+            "label": "Average scaled score",
+            "decimalPlaces": 0
+        },
+        {
+            "id": "BFm7J",
+            "column": "progress_measure_lower_conf_interval",
+            "label": "Lower confidence interval",
+            "decimalPlaces": 2
+        },
+        {
+            "id": "zVyFQ",
+            "column": "scaled_scores_eligible_pupil_count",
+            "label": "Number of average scaled score calculation"
+        },
+        {
+            "id": "klbhs",
+            "column": "eligible_pupil_count",
+            "label": "Number of eligible pupils at the end of key stage 2"
+        },
+        {
+            "id": "uk6o4",
+            "column": "progress_measure_eligible_pupil_count",
+            "label": "Number of eligible pupils included in the progress measure"
+        },
+        {
+            "id": "XvhfK",
+            "column": "absent_pupil_count",
+            "label": "Number of pupils absent"
+        },
+        {
+            "id": "T4iPJ",
+            "column": "disapplied_pupil_count",
+            "label": "Number of pupils disapplied"
+        },
+        {
+            "id": "cK731",
+            "column": "unable_to_access_arrived_pupil_count",
+            "label": "Number of pupils just arrived or unable to access"
+        },
+        {
+            "id": "5o1di",
+            "column": "expected_standard_pupil_count",
+            "label": "Number of pupils meeting the expected standard"
+        },
+        {
+            "id": "tOuEm",
+            "column": "higher_standard_pupil_count",
+            "label": "Number of pupils meeting the higher standard"
+        },
+        {
+            "id": "fnlYF",
+            "column": "not_meeting_pupil_count",
+            "label": "Number of pupils not achieved expected standard"
+        },
+        {
+            "id": "myg9K",
+            "column": "pre_ks_std_1_pupil_count",
+            "label": "Number of pupils working at pre-key stage standard 1 in writing TA"
+        },
+        {
+            "id": "gf2O9",
+            "column": "pre_ks_std_2_pupil_count",
+            "label": "Number of pupils working at pre-key stage standard 2 in writing TA"
+        },
+        {
+            "id": "A7WGK",
+            "column": "pre_ks_std_3_pupil_count",
+            "label": "Number of pupils working at pre-key stage standard 3 in writing TA"
+        },
+        {
+            "id": "Vut5X",
+            "column": "pre_ks_std_4_pupil_count",
+            "label": "Number of pupils working at pre-key stage standard 4 in writing TA"
+        },
+        {
+            "id": "PUgeb",
+            "column": "pre_ks_std_5_pupil_count",
+            "label": "Number of pupils working at pre-key stage standard 5 in writing TA"
+        },
+        {
+            "id": "1wmi3",
+            "column": "pre_ks_std_6_pupil_count",
+            "label": "Number of pupils working at pre-key stage standard 6 in writing TA"
+        },
+        {
+            "id": "dmG0Z",
+            "column": "engagement_model_or_below_pre_ks_std_pupil_count",
+            "label": "Number of pupils working at the engagement model or below pre-key stage standards in writing TA"
+        },
+        {
+            "id": "lM0cB",
+            "column": "working_below_pupil_count",
+            "label": "Number of pupils working below the standard"
+        },
+        {
+            "id": "UWJRF",
+            "column": "working_towards_pupil_count",
+            "label": "Number of pupils working towards the expected standard in writing TA"
+        },
+        {
+            "id": "ohHmX",
+            "column": "establishment_count",
+            "label": "Number of schools"
+        },
+        {
+            "id": "rELNj",
+            "column": "absent_pupil_percent",
+            "label": "Percentage of pupils absent",
+            "unit": "%",
+            "decimalPlaces": 0
+        },
+        {
+            "id": "GX1gr",
+            "column": "disapplied_pupil_percent",
+            "label": "Percentage of pupils disapplied"
+        },
+        {
+            "id": "3198u",
+            "column": "unable_to_access_arrived_pupil_percent",
+            "label": "Percentage of pupils just arrived or unable to access",
+            "unit": "%",
+            "decimalPlaces": 0
+        },
+        {
+            "id": "SeBVx",
+            "column": "expected_standard_pupil_percent",
+            "label": "Percentage of pupils meeting the expected standard",
+            "unit": "%",
+            "decimalPlaces": 0
+        },
+        {
+            "id": "y3PaB",
+            "column": "higher_standard_pupil_percent",
+            "label": "Percentage of pupils meeting the higher standard",
+            "unit": "%",
+            "decimalPlaces": 0
+        },
+        {
+            "id": "R20ka",
+            "column": "not_meeting_pupil_percent",
+            "label": "Percentage of pupils not achieved expected standard",
+            "unit": "%",
+            "decimalPlaces": 0
+        },
+        {
+            "id": "4LeUZ",
+            "column": "pre_ks_std_1_pupil_percent",
+            "label": "Percentage of pupils working at pre-key stage standard 1 in writing TA",
+            "unit": "%",
+            "decimalPlaces": 0
+        },
+        {
+            "id": "myP9K",
+            "column": "pre_ks_std_2_pupil_percent",
+            "label": "Percentage of pupils working at pre-key stage standard 2 in writing TA",
+            "unit": "%",
+            "decimalPlaces": 0
+        },
+        {
+            "id": "09VT5",
+            "column": "pre_ks_std_3_pupil_percent",
+            "label": "Percentage of pupils working at pre-key stage standard 3 in writing TA",
+            "unit": "%",
+            "decimalPlaces": 0
+        },
+        {
+            "id": "Wsa2b",
+            "column": "pre_ks_std_4_pupil_percent",
+            "label": "Percentage of pupils working at pre-key stage standard 4 in writing TA",
+            "unit": "%",
+            "decimalPlaces": 0
+        },
+        {
+            "id": "ECtqF",
+            "column": "pre_ks_std_5_pupil_percent",
+            "label": "Percentage of pupils working at pre-key stage standard 5 in writing TA",
+            "unit": "%",
+            "decimalPlaces": 0
+        },
+        {
+            "id": "QAQwb",
+            "column": "pre_ks_std_6_pupil_percent",
+            "label": "Percentage of pupils working at pre-key stage standard 6 in writing TA",
+            "unit": "%",
+            "decimalPlaces": 0
+        },
+        {
+            "id": "9LU4v",
+            "column": "engagement_model_or_below_pre_ks_std_pupil_percent",
+            "label": "Percentage of pupils working at the engagement model or below pre-key stage standards in writing TA"
+        },
+        {
+            "id": "PRmeb",
+            "column": "working_below_pupil_percent",
+            "label": "Percentage of pupils working below the standard",
+            "unit": "%",
+            "decimalPlaces": 0
+        },
+        {
+            "id": "NjtDC",
+            "column": "working_towards_pupil_percent",
+            "label": "Percentage of pupils working towards the expected standard in writing TA",
+            "unit": "%",
+            "decimalPlaces": 0
+        },
+        {
+            "id": "wgAbx",
+            "column": "scaled_scores_total",
+            "label": "Sum of scaled scores"
+        },
+        {
+            "id": "oyhmX",
+            "column": "progress_measure_total_score",
+            "label": "Total number of progress scores"
+        },
+        {
+            "id": "9LL4v",
+            "column": "progress_measure_upper_conf_interval",
+            "label": "Upper confidence interval",
+            "decimalPlaces": 2
+        }
+    ],
+    "geographicLevels": [
+        {
+            "code": "LA",
+            "label": "Local authority"
+        },
+        {
+            "code": "NAT",
+            "label": "National"
+        },
+        {
+            "code": "REG",
+            "label": "Regional"
+        }
+    ],
+    "locations": [
+        {
+            "level": {
+                "code": "LA",
+                "label": "Local authority"
+            },
+            "options": [
+                {
+                    "id": "rQkNj",
+                    "label": "Barking and Dagenham",
+                    "code": "E09000002",
+                    "oldCode": "301"
+                },
+                {
+                    "id": "GCsgr",
+                    "label": "Barnet",
+                    "code": "E09000003",
+                    "oldCode": "302"
+                },
+                {
+                    "id": "u9Mo4",
+                    "label": "Barnsley",
+                    "code": "E08000016",
+                    "oldCode": "370"
+                },
+                {
+                    "id": "l82Fc",
+                    "label": "Barnsley",
+                    "code": "E08000038",
+                    "oldCode": "370"
+                },
+                {
+                    "id": "tdEm5",
+                    "label": "Bath and North East Somerset",
+                    "code": "E06000022",
+                    "oldCode": "800"
+                },
+                {
+                    "id": "WU2bo",
+                    "label": "Bedford",
+                    "code": "E06000055",
+                    "oldCode": "822"
+                },
+                {
+                    "id": "3se8u",
+                    "label": "Bexley",
+                    "code": "E09000004",
+                    "oldCode": "303"
+                },
+                {
+                    "id": "emDuS",
+                    "label": "Birmingham",
+                    "code": "E08000025",
+                    "oldCode": "330"
+                },
+                {
+                    "id": "0kT5D",
+                    "label": "Blackburn with Darwen",
+                    "code": "E06000008",
+                    "oldCode": "889"
+                },
+                {
+                    "id": "HTzLj",
+                    "label": "Blackpool",
+                    "code": "E06000009",
+                    "oldCode": "890"
+                },
+                {
+                    "id": "7YFXo",
+                    "label": "Bolton",
+                    "code": "E08000001",
+                    "oldCode": "350"
+                },
+                {
+                    "id": "9e4vZ",
+                    "label": "Bournemouth, Christchurch and Poole",
+                    "code": "E06000058",
+                    "oldCode": "839"
+                },
+                {
+                    "id": "dt0Zw",
+                    "label": "Bracknell Forest",
+                    "code": "E06000036",
+                    "oldCode": "867"
+                },
+                {
+                    "id": "Poqeb",
+                    "label": "Bradford",
+                    "code": "E08000032",
+                    "oldCode": "380"
+                },
+                {
+                    "id": "SdgVx",
+                    "label": "Brent",
+                    "code": "E09000005",
+                    "oldCode": "304"
+                },
+                {
+                    "id": "3P8uH",
+                    "label": "Brighton and Hove",
+                    "code": "E06000043",
+                    "oldCode": "846"
+                },
+                {
+                    "id": "fyYFZ",
+                    "label": "Bristol, City of",
+                    "code": "E06000023",
+                    "oldCode": "801"
+                },
+                {
+                    "id": "yW5aB",
+                    "label": "Bromley",
+                    "code": "E09000006",
+                    "oldCode": "305"
+                },
+                {
+                    "id": "P0ebW",
+                    "label": "Buckinghamshire",
+                    "code": "E06000060",
+                    "oldCode": "825"
+                },
+                {
+                    "id": "5PHdi",
+                    "label": "Buckinghamshire",
+                    "code": "E10000002",
+                    "oldCode": "825"
+                },
+                {
+                    "id": "p5PSo",
+                    "label": "Bury",
+                    "code": "E08000002",
+                    "oldCode": "351"
+                },
+                {
+                    "id": "1rPi3",
+                    "label": "Calderdale",
+                    "code": "E08000033",
+                    "oldCode": "381"
+                },
+                {
+                    "id": "HvezL",
+                    "label": "Cambridgeshire",
+                    "code": "E10000003",
+                    "oldCode": "873"
+                },
+                {
+                    "id": "RySka",
+                    "label": "Camden",
+                    "code": "E09000007",
+                    "oldCode": "202"
+                },
+                {
+                    "id": "ENqFR",
+                    "label": "Central Bedfordshire",
+                    "code": "E06000056",
+                    "oldCode": "823"
+                },
+                {
+                    "id": "DcQeg",
+                    "label": "Cheshire East",
+                    "code": "E06000049",
+                    "oldCode": "895"
+                },
+                {
+                    "id": "eFuSW",
+                    "label": "Cheshire West and Chester",
+                    "code": "E06000050",
+                    "oldCode": "896"
+                },
+                {
+                    "id": "o47mX",
+                    "label": "City of London",
+                    "code": "E09000001",
+                    "oldCode": "201"
+                },
+                {
+                    "id": "45UZU",
+                    "label": "Cornwall",
+                    "code": "E06000052",
+                    "oldCode": "908"
+                },
+                {
+                    "id": "b8tTc",
+                    "label": "County Durham",
+                    "code": "E06000047",
+                    "oldCode": "840"
+                },
+                {
+                    "id": "TuNPJ",
+                    "label": "Coventry",
+                    "code": "E08000026",
+                    "oldCode": "331"
+                },
+                {
+                    "id": "bqZtT",
+                    "label": "Croydon",
+                    "code": "E09000008",
+                    "oldCode": "306"
+                },
+                {
+                    "id": "o49mX",
+                    "label": "Cumberland",
+                    "code": "E06000063",
+                    "oldCode": "942"
+                },
+                {
+                    "id": "4h0UZ",
+                    "label": "Cumbria",
+                    "code": "E10000006",
+                    "oldCode": "909"
+                },
+                {
+                    "id": "it6Xr",
+                    "label": "Darlington",
+                    "code": "E06000005",
+                    "oldCode": "841"
+                },
+                {
+                    "id": "z4FQE",
+                    "label": "Derby",
+                    "code": "E06000015",
+                    "oldCode": "831"
+                },
+                {
+                    "id": "CXVId",
+                    "label": "Derbyshire",
+                    "code": "E10000007",
+                    "oldCode": "830"
+                },
+                {
+                    "id": "YJuHK",
+                    "label": "Devon",
+                    "code": "E10000008",
+                    "oldCode": "878"
+                },
+                {
+                    "id": "XH4fK",
+                    "label": "Doncaster",
+                    "code": "E08000017",
+                    "oldCode": "371"
+                },
+                {
+                    "id": "2alzG",
+                    "label": "Dorset",
+                    "code": "E06000059",
+                    "oldCode": "838"
+                },
+                {
+                    "id": "hLOyW",
+                    "label": "Dudley",
+                    "code": "E08000027",
+                    "oldCode": "332"
+                },
+                {
+                    "id": "Db3Qe",
+                    "label": "Ealing",
+                    "code": "E09000009",
+                    "oldCode": "307"
+                },
+                {
+                    "id": "YPHKM",
+                    "label": "East Riding of Yorkshire",
+                    "code": "E06000011",
+                    "oldCode": "811"
+                },
+                {
+                    "id": "qgvjG",
+                    "label": "East Sussex",
+                    "code": "E10000011",
+                    "oldCode": "845"
+                },
+                {
+                    "id": "emJuS",
+                    "label": "Enfield",
+                    "code": "E09000010",
+                    "oldCode": "308"
+                },
+                {
+                    "id": "alDLP",
+                    "label": "Essex",
+                    "code": "E10000012",
+                    "oldCode": "881"
+                },
+                {
+                    "id": "UhYRF",
+                    "label": "Gateshead",
+                    "code": "E08000037",
+                    "oldCode": "390"
+                },
+                {
+                    "id": "BYe7J",
+                    "label": "Gloucestershire",
+                    "code": "E10000013",
+                    "oldCode": "916"
+                },
+                {
+                    "id": "5TYdi",
+                    "label": "Greenwich",
+                    "code": "E09000011",
+                    "oldCode": "203"
+                },
+                {
+                    "id": "4kdUZ",
+                    "label": "Hackney",
+                    "code": "E09000012",
+                    "oldCode": "204"
+                },
+                {
+                    "id": "LxWjE",
+                    "label": "Halton",
+                    "code": "E06000006",
+                    "oldCode": "876"
+                },
+                {
+                    "id": "mU59K",
+                    "label": "Hammersmith and Fulham",
+                    "code": "E09000013",
+                    "oldCode": "205"
+                },
+                {
+                    "id": "znRFQ",
+                    "label": "Hampshire",
+                    "code": "E10000014",
+                    "oldCode": "850"
+                },
+                {
+                    "id": "0evT5",
+                    "label": "Haringey",
+                    "code": "E09000014",
+                    "oldCode": "309"
+                },
+                {
+                    "id": "WcR2b",
+                    "label": "Harrow",
+                    "code": "E09000015",
+                    "oldCode": "310"
+                },
+                {
+                    "id": "O7CLF",
+                    "label": "Hartlepool",
+                    "code": "E06000001",
+                    "oldCode": "805"
+                },
+                {
+                    "id": "EADqF",
+                    "label": "Havering",
+                    "code": "E09000016",
+                    "oldCode": "311"
+                },
+                {
+                    "id": "TsPJP",
+                    "label": "Herefordshire, County of",
+                    "code": "E06000019",
+                    "oldCode": "884"
+                },
+                {
+                    "id": "kLDhs",
+                    "label": "Hertfordshire",
+                    "code": "E10000015",
+                    "oldCode": "919"
+                },
+                {
+                    "id": "Qt6wb",
+                    "label": "Hillingdon",
+                    "code": "E09000017",
+                    "oldCode": "312"
+                },
+                {
+                    "id": "9Ru4v",
+                    "label": "Hounslow",
+                    "code": "E09000018",
+                    "oldCode": "313"
+                },
+                {
+                    "id": "Rpka2",
+                    "label": "Isle of Wight",
+                    "code": "E06000046",
+                    "oldCode": "921"
+                },
+                {
+                    "id": "mV9KC",
+                    "label": "Isles of Scilly",
+                    "code": "E06000053",
+                    "oldCode": "420"
+                },
+                {
+                    "id": "23Llz",
+                    "label": "Islington",
+                    "code": "E09000019",
+                    "oldCode": "206"
+                },
+                {
+                    "id": "PoTeb",
+                    "label": "Kensington and Chelsea",
+                    "code": "E09000020",
+                    "oldCode": "207"
+                },
+                {
+                    "id": "u4Ko4",
+                    "label": "Kent",
+                    "code": "E10000016",
+                    "oldCode": "886"
+                },
+                {
+                    "id": "CpId1",
+                    "label": "Kingston upon Hull, City of",
+                    "code": "E06000010",
+                    "oldCode": "810"
+                },
+                {
+                    "id": "NwNDC",
+                    "label": "Kingston upon Thames",
+                    "code": "E09000021",
+                    "oldCode": "314"
+                },
+                {
+                    "id": "dPE0Z",
+                    "label": "Kirklees",
+                    "code": "E08000034",
+                    "oldCode": "382"
+                },
+                {
+                    "id": "qGJjG",
+                    "label": "Knowsley",
+                    "code": "E08000011",
+                    "oldCode": "340"
+                },
+                {
+                    "id": "wqtbx",
+                    "label": "Lambeth",
+                    "code": "E09000022",
+                    "oldCode": "208"
+                },
+                {
+                    "id": "XzUfK",
+                    "label": "Lancashire",
+                    "code": "E10000017",
+                    "oldCode": "888"
+                },
+                {
+                    "id": "u9Oo4",
+                    "label": "Leeds",
+                    "code": "E08000035",
+                    "oldCode": "383"
+                },
+                {
+                    "id": "krhsL",
+                    "label": "Leicester",
+                    "code": "E06000016",
+                    "oldCode": "856"
+                },
+                {
+                    "id": "ToMPJ",
+                    "label": "Leicestershire",
+                    "code": "E10000018",
+                    "oldCode": "855"
+                },
+                {
+                    "id": "oU4mX",
+                    "label": "Lewisham",
+                    "code": "E09000023",
+                    "oldCode": "209"
+                },
+                {
+                    "id": "csC31",
+                    "label": "Lincolnshire",
+                    "code": "E10000019",
+                    "oldCode": "925"
+                },
+                {
+                    "id": "a2NLP",
+                    "label": "Liverpool",
+                    "code": "E08000012",
+                    "oldCode": "341"
+                },
+                {
+                    "id": "AkGK0",
+                    "label": "Luton",
+                    "code": "E06000032",
+                    "oldCode": "821"
+                },
+                {
+                    "id": "IXFBz",
+                    "label": "Manchester",
+                    "code": "E08000003",
+                    "oldCode": "352"
+                },
+                {
+                    "id": "1Ti3Z",
+                    "label": "Medway",
+                    "code": "E06000035",
+                    "oldCode": "887"
+                },
+                {
+                    "id": "9kk4v",
+                    "label": "Merton",
+                    "code": "E09000024",
+                    "oldCode": "315"
+                },
+                {
+                    "id": "7zXob",
+                    "label": "Middlesbrough",
+                    "code": "E06000002",
+                    "oldCode": "806"
+                },
+                {
+                    "id": "GZgru",
+                    "label": "Milton Keynes",
+                    "code": "E06000042",
+                    "oldCode": "826"
+                },
+                {
+                    "id": "5Tsdi",
+                    "label": "Newcastle upon Tyne",
+                    "code": "E08000021",
+                    "oldCode": "391"
+                },
+                {
+                    "id": "deu0Z",
+                    "label": "Newham",
+                    "code": "E09000025",
+                    "oldCode": "316"
+                },
+                {
+                    "id": "5Pxdi",
+                    "label": "Norfolk",
+                    "code": "E10000020",
+                    "oldCode": "926"
+                },
+                {
+                    "id": "qFjG7",
+                    "label": "North East Lincolnshire",
+                    "code": "E06000012",
+                    "oldCode": "812"
+                },
+                {
+                    "id": "arLPb",
+                    "label": "North Lincolnshire",
+                    "code": "E06000013",
+                    "oldCode": "813"
+                },
+                {
+                    "id": "NrDCj",
+                    "label": "North Northamptonshire",
+                    "code": "E06000061",
+                    "oldCode": "940"
+                },
+                {
+                    "id": "juAMt",
+                    "label": "North Somerset",
+                    "code": "E06000024",
+                    "oldCode": "802"
+                },
+                {
+                    "id": "tj0Em",
+                    "label": "North Tyneside",
+                    "code": "E08000022",
+                    "oldCode": "392"
+                },
+                {
+                    "id": "dPe0Z",
+                    "label": "North Yorkshire",
+                    "code": "E06000065",
+                    "oldCode": "815"
+                },
+                {
+                    "id": "W3k2b",
+                    "label": "North Yorkshire",
+                    "code": "E10000023",
+                    "oldCode": "815"
+                },
+                {
+                    "id": "0unT5",
+                    "label": "Northamptonshire",
+                    "code": "E10000021",
+                    "oldCode": "928"
+                },
+                {
+                    "id": "Qiwb4",
+                    "label": "Northumberland",
+                    "code": "E06000057",
+                    "oldCode": "929"
+                },
+                {
+                    "id": "X9fKb",
+                    "label": "Nottingham",
+                    "code": "E06000018",
+                    "oldCode": "892"
+                },
+                {
+                    "id": "tATEm",
+                    "label": "Nottinghamshire",
+                    "code": "E10000024",
+                    "oldCode": "891"
+                },
+                {
+                    "id": "iNE6X",
+                    "label": "Oldham",
+                    "code": "E08000004",
+                    "oldCode": "353"
+                },
+                {
+                    "id": "fFLYF",
+                    "label": "Oxfordshire",
+                    "code": "E10000025",
+                    "oldCode": "931"
+                },
+                {
+                    "id": "ghO9G",
+                    "label": "Peterborough",
+                    "code": "E06000031",
+                    "oldCode": "874"
+                },
+                {
+                    "id": "TrPJP",
+                    "label": "Plymouth",
+                    "code": "E06000026",
+                    "oldCode": "879"
+                },
+                {
+                    "id": "SGVxt",
+                    "label": "Portsmouth",
+                    "code": "E06000044",
+                    "oldCode": "851"
+                },
+                {
+                    "id": "lpcBn",
+                    "label": "Reading",
+                    "code": "E06000038",
+                    "oldCode": "870"
+                },
+                {
+                    "id": "O7fCL",
+                    "label": "Redbridge",
+                    "code": "E09000026",
+                    "oldCode": "317"
+                },
+                {
+                    "id": "pTSoj",
+                    "label": "Redcar and Cleveland",
+                    "code": "E06000003",
+                    "oldCode": "807"
+                },
+                {
+                    "id": "7HJXo",
+                    "label": "Richmond upon Thames",
+                    "code": "E09000027",
+                    "oldCode": "318"
+                },
+                {
+                    "id": "LlMWj",
+                    "label": "Rochdale",
+                    "code": "E08000005",
+                    "oldCode": "354"
+                },
+                {
+                    "id": "TuxPJ",
+                    "label": "Rotherham",
+                    "code": "E08000018",
+                    "oldCode": "372"
+                },
+                {
+                    "id": "uxo41",
+                    "label": "Rutland",
+                    "code": "E06000017",
+                    "oldCode": "857"
+                },
+                {
+                    "id": "6DArf",
+                    "label": "Salford",
+                    "code": "E08000006",
+                    "oldCode": "355"
+                },
+                {
+                    "id": "mUq9K",
+                    "label": "Sandwell",
+                    "code": "E08000028",
+                    "oldCode": "333"
+                },
+                {
+                    "id": "zvUFQ",
+                    "label": "Sefton",
+                    "code": "E08000014",
+                    "oldCode": "343"
+                },
+                {
+                    "id": "cZO31",
+                    "label": "Sheffield",
+                    "code": "E08000019",
+                    "oldCode": "373"
+                },
+                {
+                    "id": "Uh4IR",
+                    "label": "Sheffield",
+                    "code": "E08000039",
+                    "oldCode": "373"
+                },
+                {
+                    "id": "5fdi9",
+                    "label": "Shropshire",
+                    "code": "E06000051",
+                    "oldCode": "893"
+                },
+                {
+                    "id": "UfRFO",
+                    "label": "Slough",
+                    "code": "E06000039",
+                    "oldCode": "871"
+                },
+                {
+                    "id": "gIyO9",
+                    "label": "Solihull",
+                    "code": "E08000029",
+                    "oldCode": "334"
+                },
+                {
+                    "id": "OBXCL",
+                    "label": "Somerset",
+                    "code": "E06000066",
+                    "oldCode": "933"
+                },
+                {
+                    "id": "EGQqF",
+                    "label": "Somerset",
+                    "code": "E10000027",
+                    "oldCode": "933"
+                },
+                {
+                    "id": "eNuSW",
+                    "label": "South Gloucestershire",
+                    "code": "E06000025",
+                    "oldCode": "803"
+                },
+                {
+                    "id": "fzaYF",
+                    "label": "South Tyneside",
+                    "code": "E08000023",
+                    "oldCode": "393"
+                },
+                {
+                    "id": "yVaBm",
+                    "label": "Southampton",
+                    "code": "E06000045",
+                    "oldCode": "852"
+                },
+                {
+                    "id": "VN5XE",
+                    "label": "Southend-on-Sea",
+                    "code": "E06000033",
+                    "oldCode": "882"
+                },
+                {
+                    "id": "pdeSo",
+                    "label": "Southwark",
+                    "code": "E09000028",
+                    "oldCode": "210"
+                },
+                {
+                    "id": "BfP7J",
+                    "label": "St. Helens",
+                    "code": "E08000013",
+                    "oldCode": "342"
+                },
+                {
+                    "id": "jOmAM",
+                    "label": "Staffordshire",
+                    "code": "E10000028",
+                    "oldCode": "860"
+                },
+                {
+                    "id": "0ehT5",
+                    "label": "Stockport",
+                    "code": "E08000007",
+                    "oldCode": "356"
+                },
+                {
+                    "id": "IzBzg",
+                    "label": "Stockton-on-Tees",
+                    "code": "E06000004",
+                    "oldCode": "808"
+                },
+                {
+                    "id": "5Zdi9",
+                    "label": "Stoke-on-Trent",
+                    "code": "E06000021",
+                    "oldCode": "861"
+                },
+                {
+                    "id": "e9QuS",
+                    "label": "Suffolk",
+                    "code": "E10000029",
+                    "oldCode": "935"
+                },
+                {
+                    "id": "jgoAM",
+                    "label": "Sunderland",
+                    "code": "E08000024",
+                    "oldCode": "394"
+                },
+                {
+                    "id": "ToDPJ",
+                    "label": "Surrey",
+                    "code": "E10000030",
+                    "oldCode": "936"
+                },
+                {
+                    "id": "IfJBz",
+                    "label": "Sutton",
+                    "code": "E09000029",
+                    "oldCode": "319"
+                },
+                {
+                    "id": "mE9KC",
+                    "label": "Swindon",
+                    "code": "E06000030",
+                    "oldCode": "866"
+                },
+                {
+                    "id": "HJPzL",
+                    "label": "Tameside",
+                    "code": "E08000008",
+                    "oldCode": "357"
+                },
+                {
+                    "id": "cg31S",
+                    "label": "Telford and Wrekin",
+                    "code": "E06000020",
+                    "oldCode": "894"
+                },
+                {
+                    "id": "PEebW",
+                    "label": "Thurrock",
+                    "code": "E06000034",
+                    "oldCode": "883"
+                },
+                {
+                    "id": "hgyW6",
+                    "label": "Torbay",
+                    "code": "E06000027",
+                    "oldCode": "880"
+                },
+                {
+                    "id": "iDq6X",
+                    "label": "Tower Hamlets",
+                    "code": "E09000030",
+                    "oldCode": "211"
+                },
+                {
+                    "id": "C7SId",
+                    "label": "Trafford",
+                    "code": "E08000009",
+                    "oldCode": "358"
+                },
+                {
+                    "id": "l8ScB",
+                    "label": "Wakefield",
+                    "code": "E08000036",
+                    "oldCode": "384"
+                },
+                {
+                    "id": "AOhGK",
+                    "label": "Walsall",
+                    "code": "E08000030",
+                    "oldCode": "335"
+                },
+                {
+                    "id": "LcKWj",
+                    "label": "Waltham Forest",
+                    "code": "E09000031",
+                    "oldCode": "320"
+                },
+                {
+                    "id": "6QGrf",
+                    "label": "Wandsworth",
+                    "code": "E09000032",
+                    "oldCode": "212"
+                },
+                {
+                    "id": "6jrfe",
+                    "label": "Warrington",
+                    "code": "E06000007",
+                    "oldCode": "877"
+                },
+                {
+                    "id": "hWCyW",
+                    "label": "Warwickshire",
+                    "code": "E10000031",
+                    "oldCode": "937"
+                },
+                {
+                    "id": "ugo41",
+                    "label": "West Berkshire",
+                    "code": "E06000037",
+                    "oldCode": "869"
+                },
+                {
+                    "id": "wwbxT",
+                    "label": "West Northamptonshire",
+                    "code": "E06000062",
+                    "oldCode": "941"
+                },
+                {
+                    "id": "mRj9K",
+                    "label": "West Sussex",
+                    "code": "E10000032",
+                    "oldCode": "938"
+                },
+                {
+                    "id": "0uyT5",
+                    "label": "Westminster",
+                    "code": "E09000033",
+                    "oldCode": "213"
+                },
+                {
+                    "id": "9RR4v",
+                    "label": "Westmorland and Furness",
+                    "code": "E06000064",
+                    "oldCode": "943"
+                },
+                {
+                    "id": "YFeHK",
+                    "label": "Wigan",
+                    "code": "E08000010",
+                    "oldCode": "359"
+                },
+                {
+                    "id": "0JT5D",
+                    "label": "Wiltshire",
+                    "code": "E06000054",
+                    "oldCode": "865"
+                },
+                {
+                    "id": "oBmXk",
+                    "label": "Windsor and Maidenhead",
+                    "code": "E06000040",
+                    "oldCode": "868"
+                },
+                {
+                    "id": "kaNhs",
+                    "label": "Wirral",
+                    "code": "E08000015",
+                    "oldCode": "344"
+                },
+                {
+                    "id": "rRNj1",
+                    "label": "Wokingham",
+                    "code": "E06000041",
+                    "oldCode": "872"
+                },
+                {
+                    "id": "V0D5X",
+                    "label": "Wolverhampton",
+                    "code": "E08000031",
+                    "oldCode": "336"
+                },
+                {
+                    "id": "gBaO9",
+                    "label": "Worcestershire",
+                    "code": "E10000034",
+                    "oldCode": "885"
+                },
+                {
+                    "id": "BT7J3",
+                    "label": "York",
+                    "code": "E06000014",
+                    "oldCode": "816"
+                }
+            ]
+        },
+        {
+            "level": {
+                "code": "NAT",
+                "label": "National"
+            },
+            "options": [
+                {
+                    "id": "dP0Zw",
+                    "label": "England",
+                    "code": "E92000001"
+                }
+            ]
+        },
+        {
+            "level": {
+                "code": "REG",
+                "label": "Regional"
+            },
+            "options": [
+                {
+                    "id": "1Nei3",
+                    "label": "East Midlands",
+                    "code": "E12000004"
+                },
+                {
+                    "id": "u4Co4",
+                    "label": "East of England",
+                    "code": "E12000006"
+                },
+                {
+                    "id": "9ko4v",
+                    "label": "Inner London",
+                    "code": "E13000001"
+                },
+                {
+                    "id": "lZVcB",
+                    "label": "London",
+                    "code": "E12000007"
+                },
+                {
+                    "id": "ACyGK",
+                    "label": "North East",
+                    "code": "E12000001"
+                },
+                {
+                    "id": "VTQ5X",
+                    "label": "North West",
+                    "code": "E12000002"
+                },
+                {
+                    "id": "28Wlz",
+                    "label": "Outer London",
+                    "code": "E13000002"
+                },
+                {
+                    "id": "UyHRF",
+                    "label": "South East",
+                    "code": "E12000008"
+                },
+                {
+                    "id": "oUXmX",
+                    "label": "South West",
+                    "code": "E12000009"
+                },
+                {
+                    "id": "deq0Z",
+                    "label": "West Midlands",
+                    "code": "E12000005"
+                },
+                {
+                    "id": "Pmjeb",
+                    "label": "Yorkshire and The Humber",
+                    "code": "E12000003"
+                }
+            ]
+        }
+    ],
+    "timePeriods": [
+        {
+            "code": "AY",
+            "period": "2018/2019",
+            "label": "2018/19"
+        },
+        {
+            "code": "AY",
+            "period": "2021/2022",
+            "label": "2021/22"
+        },
+        {
+            "code": "AY",
+            "period": "2022/2023",
+            "label": "2022/23"
+        },
+        {
+            "code": "AY",
+            "period": "2023/2024",
+            "label": "2023/24"
+        },
+        {
+            "code": "AY",
+            "period": "2024/2025",
+            "label": "2024/25"
+        },
+        {
+            "code": "AY",
+            "period": "2025/2026",
+            "label": "2025/26"
+        }
+    ]
+}

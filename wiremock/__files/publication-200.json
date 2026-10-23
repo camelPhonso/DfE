@@ -1,0 +1,657 @@
+{
+    "paging": {
+        "page": 1,
+        "pageSize": 10,
+        "totalResults": 22,
+        "totalPages": 3
+    },
+    "results": [
+        {
+            "id": "d32e9901-d5ef-b573-9993-06b9e9ed4e9d",
+            "title": "Attainment by region and local authority maintained schools",
+            "summary": "This file contains data on the attainment of pupils in key stage 2 assessments in England, broken down by region, local authority maintained schools and pupil characteristics.",
+            "status": "Published",
+            "latestVersion": {
+                "version": "2.1",
+                "published": "2026-09-16T16:00:36.908426+00:00",
+                "totalResults": 807312,
+                "file": {
+                    "id": "cad7cb83-06b6-4ba0-906f-94ab198d081a"
+                },
+                "timePeriods": {
+                    "start": "2018/19",
+                    "end": "2025/26"
+                },
+                "geographicLevels": [
+                    "Local authority",
+                    "National",
+                    "Regional"
+                ],
+                "filters": [
+                    "Disadvantage status",
+                    "Establishment type",
+                    "Sex",
+                    "Special education needs provision",
+                    "Subjects"
+                ],
+                "indicators": [
+                    "Average progress score",
+                    "Average scaled score",
+                    "Lower confidence interval",
+                    "Number of average scaled score calculation",
+                    "Number of eligible pupils at the end of key stage 2",
+                    "Number of eligible pupils included in the progress measure",
+                    "Number of pupils absent",
+                    "Number of pupils disapplied",
+                    "Number of pupils just arrived or unable to access",
+                    "Number of pupils meeting the expected standard",
+                    "Number of pupils meeting the higher standard",
+                    "Number of pupils not achieved expected standard",
+                    "Number of pupils working at pre-key stage standard 1 in writing TA",
+                    "Number of pupils working at pre-key stage standard 2 in writing TA",
+                    "Number of pupils working at pre-key stage standard 3 in writing TA",
+                    "Number of pupils working at pre-key stage standard 4 in writing TA",
+                    "Number of pupils working at pre-key stage standard 5 in writing TA",
+                    "Number of pupils working at pre-key stage standard 6 in writing TA",
+                    "Number of pupils working at the engagement model or below pre-key stage standards in writing TA",
+                    "Number of pupils working below the standard",
+                    "Number of pupils working towards the expected standard in writing TA",
+                    "Number of schools",
+                    "Percentage of pupils absent",
+                    "Percentage of pupils disapplied",
+                    "Percentage of pupils just arrived or unable to access",
+                    "Percentage of pupils meeting the expected standard",
+                    "Percentage of pupils meeting the higher standard",
+                    "Percentage of pupils not achieved expected standard",
+                    "Percentage of pupils working at pre-key stage standard 1 in writing TA",
+                    "Percentage of pupils working at pre-key stage standard 2 in writing TA",
+                    "Percentage of pupils working at pre-key stage standard 3 in writing TA",
+                    "Percentage of pupils working at pre-key stage standard 4 in writing TA",
+                    "Percentage of pupils working at pre-key stage standard 5 in writing TA",
+                    "Percentage of pupils working at pre-key stage standard 6 in writing TA",
+                    "Percentage of pupils working at the engagement model or below pre-key stage standards in writing TA",
+                    "Percentage of pupils working below the standard",
+                    "Percentage of pupils working towards the expected standard in writing TA",
+                    "Sum of scaled scores",
+                    "Total number of progress scores",
+                    "Upper confidence interval"
+                ]
+            }
+        },
+        {
+            "id": "22339901-6f3a-7272-8576-03b26377d4ee",
+            "title": "Combinations of attainment at the expected standard in reading, writing and maths (combined)",
+            "summary": "This file contains data to show the combinations of meeting the expected standard in reading, writing and maths by pupil characteristics.",
+            "status": "Published",
+            "latestVersion": {
+                "version": "2.1",
+                "published": "2026-09-16T16:00:36.812793+00:00",
+                "totalResults": 8068,
+                "file": {
+                    "id": "cb6b62e1-7ed8-4a7b-bf7f-a251d64a5a8a"
+                },
+                "timePeriods": {
+                    "start": "2018/19",
+                    "end": "2025/26"
+                },
+                "geographicLevels": [
+                    "National"
+                ],
+                "filters": [
+                    "Disadvantage status",
+                    "Ethnicity minor",
+                    "First language status",
+                    "Free school meal eligibility grouping",
+                    "Month of birth",
+                    "SEN primary need provision",
+                    "SEN provision",
+                    "Sex"
+                ],
+                "indicators": [
+                    "Number all other combinations",
+                    "Number of pupils below the requirements of the national curriculum in at least one subject",
+                    "Number of pupils meeting the expected standard in 1 subject",
+                    "Number of pupils meeting the expected standard in 2 subjects",
+                    "Number of pupils meeting the expected standard in maths but not in reading and writing",
+                    "Number of pupils meeting the expected standard in reading and maths but not in writing TA",
+                    "Number of pupils meeting the expected standard in reading and writing but not in maths",
+                    "Number of pupils meeting the expected standard in reading but not in writing and maths",
+                    "Number of pupils meeting the expected standard in reading, writing and maths (combined)",
+                    "Number of pupils meeting the expected standard in writing and maths but not in reading",
+                    "Number of pupils meeting the expected standard in writing but not in reading and maths",
+                    "Number of pupils not meeting the expected standard in all 3 subjects",
+                    "Number of schools",
+                    "Percentage all other combinations",
+                    "Percentage of pupils below the requirements of the national curriculum in at least one subject",
+                    "Percentage of pupils meeting the expected standard in 1 subject",
+                    "Percentage of pupils meeting the expected standard in 2 subjects",
+                    "Percentage of pupils meeting the expected standard in maths but not in reading and writing",
+                    "Percentage of pupils meeting the expected standard in reading and maths but not in writing TA",
+                    "Percentage of pupils meeting the expected standard in reading and writing but not in maths",
+                    "Percentage of pupils meeting the expected standard in reading but not in writing and maths",
+                    "Percentage of pupils meeting the expected standard in reading, writing and maths (combined)",
+                    "Percentage of pupils meeting the expected standard in writing and maths but not in reading",
+                    "Percentage of pupils meeting the expected standard in writing but not in reading and maths",
+                    "Percentage of pupils not meeting the expected standard in all 3 subjects",
+                    "Total number",
+                    "Total percentage",
+                    "Total pupils eligible for reading, writing and maths (combined)"
+                ]
+            }
+        },
+        {
+            "id": "d42e9901-ffd5-0871-87a4-5c99e5ae1f62",
+            "title": "Attainment by region, local authority and pupil characteristics",
+            "summary": "This file contains data on the attainment of pupils in key stage 2 assessments in England, broken down by region, local authority and pupil characteristics.",
+            "status": "Published",
+            "latestVersion": {
+                "version": "1.2",
+                "published": "2026-09-16T16:00:36.433537+00:00",
+                "totalResults": 4600728,
+                "file": {
+                    "id": "33799174-6834-4433-b0d0-a0e602ea90b7"
+                },
+                "timePeriods": {
+                    "start": "2018/19",
+                    "end": "2025/26"
+                },
+                "geographicLevels": [
+                    "Local authority",
+                    "National",
+                    "Regional"
+                ],
+                "filters": [
+                    "Disadvantage status",
+                    "First language status",
+                    "Free school meal status",
+                    "Minor ethnic group",
+                    "sex",
+                    "Special education needs provision",
+                    "Subjects"
+                ],
+                "indicators": [
+                    "Average progress score",
+                    "Average scaled score",
+                    "Lower confidence interval",
+                    "Number of average scaled score calculation",
+                    "Number of eligible pupils at the end of key stage 2",
+                    "Number of eligible pupils included in the progress measure",
+                    "Number of pupils absent",
+                    "Number of pupils disapplied",
+                    "Number of pupils just arrived or unable to access",
+                    "Number of pupils meeting the expected standard",
+                    "Number of pupils meeting the higher standard",
+                    "Number of pupils not achieved expected standard",
+                    "Number of pupils working at pre-key stage standard 1 in writing TA",
+                    "Number of pupils working at pre-key stage standard 2 in writing TA",
+                    "Number of pupils working at pre-key stage standard 3 in writing TA",
+                    "Number of pupils working at pre-key stage standard 4 in writing TA",
+                    "Number of pupils working at pre-key stage standard 5 in writing TA",
+                    "Number of pupils working at pre-key stage standard 6 in writing TA",
+                    "Number of pupils working at the engagement model or below pre-key stage standards in writing TA",
+                    "Number of pupils working below the standard",
+                    "Number of pupils working towards the expected standard in writing TA",
+                    "Number of schools",
+                    "Percentage of pupils absent",
+                    "Percentage of pupils disapplied",
+                    "Percentage of pupils just arrived or unable to access",
+                    "Percentage of pupils meeting the expected standard",
+                    "Percentage of pupils meeting the higher standard",
+                    "Percentage of pupils not achieved expected standard",
+                    "Percentage of pupils working at pre-key stage standard 1 in writing TA",
+                    "Percentage of pupils working at pre-key stage standard 2 in writing TA",
+                    "Percentage of pupils working at pre-key stage standard 3 in writing TA",
+                    "Percentage of pupils working at pre-key stage standard 4 in writing TA",
+                    "Percentage of pupils working at pre-key stage standard 5 in writing TA",
+                    "Percentage of pupils working at pre-key stage standard 6 in writing TA",
+                    "Percentage of pupils working at the engagement model or below pre-key stage standards in writing TA",
+                    "Percentage of pupils working below the standard",
+                    "Percentage of pupils working towards the expected standard in writing TA",
+                    "Sum of scaled scores",
+                    "Total number of progress scores",
+                    "Upper confidence interval"
+                ]
+            }
+        },
+        {
+            "id": "0e2f9901-af3b-9f77-9e7d-3a93fd7c015e",
+            "title": "Attainment by school characteristics",
+            "summary": "This file contains data on the attainment of pupils in key stage 2 assessments in England, broken down by school characteristics.",
+            "status": "Published",
+            "latestVersion": {
+                "version": "1.2",
+                "published": "2026-09-15T15:19:06.712303+00:00",
+                "totalResults": 3612,
+                "file": {
+                    "id": "a5543570-4e7f-4aab-a92d-6f59c5696e8c"
+                },
+                "timePeriods": {
+                    "start": "2015/16",
+                    "end": "2025/26"
+                },
+                "geographicLevels": [
+                    "National"
+                ],
+                "filters": [
+                    "Education phase",
+                    "School cohort size",
+                    "School religious  character",
+                    "sex",
+                    "Subjects",
+                    "Type of establishment"
+                ],
+                "indicators": [
+                    "Average progress score",
+                    "Average scaled score",
+                    "Lower confidence interval",
+                    "Number of average scaled score calculation",
+                    "Number of eligible pupils at the end of key stage 2",
+                    "Number of eligible pupils included in the progress measure",
+                    "Number of pupils absent",
+                    "Number of pupils disapplied",
+                    "Number of pupils just arrived or unable to access",
+                    "Number of pupils meeting the expected standard",
+                    "Number of pupils meeting the higher standard",
+                    "Number of pupils not achieved expected standard",
+                    "Number of pupils unable to access",
+                    "Number of pupils with early development of the expected standard in writing TA",
+                    "Number of pupils with foundations of the expected standard in writing TA",
+                    "Number of pupils with growing development of the expected standard in writing TA",
+                    "Number of pupils working at pre-key stage standard 1 in writing TA",
+                    "Number of pupils working at pre-key stage standard 2 in writing TA",
+                    "Number of pupils working at pre-key stage standard 3 in writing TA",
+                    "Number of pupils working at pre-key stage standard 4 in writing TA",
+                    "Number of pupils working at pre-key stage standard 5 in writing TA",
+                    "Number of pupils working at pre-key stage standard 6 in writing TA",
+                    "Number of pupils working at the engagement model or below pre-key stage standards in writing TA",
+                    "Number of pupils working below the interim pre-key stage standards in writing TA",
+                    "Number of pupils working below the standard",
+                    "Number of pupils working towards the expected standard in writing TA",
+                    "Number of schools",
+                    "Percentage of pupils absent",
+                    "Percentage of pupils disapplied",
+                    "Percentage of pupils just arrived or unable to access",
+                    "Percentage of pupils meeting the expected standard",
+                    "Percentage of pupils meeting the higher standard",
+                    "Percentage of pupils not achieved expected standard",
+                    "Percentage of pupils unable to access",
+                    "Percentage of pupils with early development of the expected standard in writing TA",
+                    "Percentage of pupils with foundations of the expected standard in writing TA",
+                    "Percentage of pupils with growing development of the expected standard in writing TA",
+                    "Percentage of pupils working at pre-key stage standard 1 in writing TA",
+                    "Percentage of pupils working at pre-key stage standard 2 in writing TA",
+                    "Percentage of pupils working at pre-key stage standard 3 in writing TA",
+                    "Percentage of pupils working at pre-key stage standard 4 in writing TA",
+                    "Percentage of pupils working at pre-key stage standard 5 in writing TA",
+                    "Percentage of pupils working at pre-key stage standard 6 in writing TA",
+                    "Percentage of pupils working at the engagement model or below pre-key stage standards in writing TA",
+                    "Percentage of pupils working below the interim pre-key stage standards in writing TA",
+                    "Percentage of pupils working below the standard",
+                    "Percentage of pupils working towards the expected standard in writing TA",
+                    "Sum of scaled scores",
+                    "Total number of progress scores",
+                    "Upper confidence interval"
+                ]
+            }
+        },
+        {
+            "id": "102f9901-b768-4d77-8192-0ad3f884fc86",
+            "title": "Distribution of scaled scores",
+            "summary": "This file contains data on scaled score distributions for key stage 2 tests in England.",
+            "status": "Published",
+            "latestVersion": {
+                "version": "1.2",
+                "published": "2026-09-15T15:19:06.661482+00:00",
+                "totalResults": 2238,
+                "file": {
+                    "id": "4aaf0a62-1937-404e-879c-af0acc67d78f"
+                },
+                "timePeriods": {
+                    "start": "2018/19",
+                    "end": "2025/26"
+                },
+                "geographicLevels": [
+                    "National"
+                ],
+                "filters": [
+                    "Scale scores distribution",
+                    "Sex",
+                    "Subjects"
+                ],
+                "indicators": [
+                    "Cumulative percentage",
+                    "Total number of eligible pupils at the end of key stage 2"
+                ]
+            }
+        },
+        {
+            "id": "102f9901-7628-f374-bc64-906d075ee072",
+            "title": "Disadvantage gap index",
+            "summary": "This file contains data on the key stage 2 disadvantage gap index in England.",
+            "status": "Published",
+            "latestVersion": {
+                "version": "1.2",
+                "published": "2026-09-15T15:19:06.60272+00:00",
+                "totalResults": 32,
+                "file": {
+                    "id": "01d054be-3561-45b5-87b4-2788feb7bf8d"
+                },
+                "timePeriods": {
+                    "start": "2010/11",
+                    "end": "2025/26"
+                },
+                "geographicLevels": [
+                    "National"
+                ],
+                "filters": [
+                    "Disadvantage status"
+                ],
+                "indicators": [
+                    "Disadvantage gap index",
+                    "Total number of pupils"
+                ]
+            }
+        },
+        {
+            "id": "c62e9901-7b35-7272-9fd1-30ab9a527e10",
+            "title": "Attainment by region and local authority",
+            "summary": "This file contains data on the attainment of pupils in key stage 2 assessments in England, broken down by region and local authority.",
+            "status": "Published",
+            "latestVersion": {
+                "version": "1.2",
+                "published": "2026-09-15T15:19:06.551372+00:00",
+                "totalResults": 44154,
+                "file": {
+                    "id": "db209e9d-5278-4ec8-8e8b-eb62abe5edf6"
+                },
+                "timePeriods": {
+                    "start": "2015/16",
+                    "end": "2025/26"
+                },
+                "geographicLevels": [
+                    "Local authority",
+                    "National",
+                    "Regional"
+                ],
+                "filters": [
+                    "sex",
+                    "Subjects",
+                    "Young carer"
+                ],
+                "indicators": [
+                    "Average progress score",
+                    "Average scaled score",
+                    "Lower confidence interval",
+                    "Number of average scaled score calculation",
+                    "Number of eligible pupils at the end of key stage 2",
+                    "Number of eligible pupils included in the progress measure",
+                    "Number of pupils absent",
+                    "Number of pupils disapplied",
+                    "Number of pupils just arrived or unable to access",
+                    "Number of pupils meeting the expected standard",
+                    "Number of pupils meeting the higher standard",
+                    "Number of pupils not achieved expected standard",
+                    "Number of pupils unable to access",
+                    "Number of pupils with early development of the expected standard in writing TA",
+                    "Number of pupils with foundations of the expected standard in writing TA",
+                    "Number of pupils with growing development of the expected standard in writing TA",
+                    "Number of pupils working at pre-key stage standard 1 in writing TA",
+                    "Number of pupils working at pre-key stage standard 2 in writing TA",
+                    "Number of pupils working at pre-key stage standard 3 in writing TA",
+                    "Number of pupils working at pre-key stage standard 4 in writing TA",
+                    "Number of pupils working at pre-key stage standard 5 in writing TA",
+                    "Number of pupils working at pre-key stage standard 6 in writing TA",
+                    "Number of pupils working at the engagement model or below pre-key stage standards in writing TA",
+                    "Number of pupils working below the interim pre-key stage standards in writing TA",
+                    "Number of pupils working below the standard",
+                    "Number of pupils working towards the expected standard in writing TA",
+                    "Number of schools",
+                    "Percentage of pupils absent",
+                    "Percentage of pupils disapplied",
+                    "Percentage of pupils just arrived or unable to access",
+                    "Percentage of pupils meeting the expected standard",
+                    "Percentage of pupils meeting the higher standard",
+                    "Percentage of pupils not achieved expected standard",
+                    "Percentage of pupils unable to access",
+                    "Percentage of pupils with early development of the expected standard in writing TA",
+                    "Percentage of pupils with foundations of the expected standard in writing TA",
+                    "Percentage of pupils with growing development of the expected standard in writing TA",
+                    "Percentage of pupils working at pre-key stage standard 1 in writing TA",
+                    "Percentage of pupils working at pre-key stage standard 2 in writing TA",
+                    "Percentage of pupils working at pre-key stage standard 3 in writing TA",
+                    "Percentage of pupils working at pre-key stage standard 4 in writing TA",
+                    "Percentage of pupils working at pre-key stage standard 5 in writing TA",
+                    "Percentage of pupils working at pre-key stage standard 6 in writing TA",
+                    "Percentage of pupils working at the engagement model or below pre-key stage standards in writing TA",
+                    "Percentage of pupils working below the interim pre-key stage standards in writing TA",
+                    "Percentage of pupils working below the standard",
+                    "Percentage of pupils working towards the expected standard in writing TA",
+                    "Sum of scaled scores",
+                    "Total number of progress scores",
+                    "Upper confidence interval"
+                ]
+            }
+        },
+        {
+            "id": "c62e9901-42f1-1e75-b95e-cd874bbf569b",
+            "title": "Attainment by pupil residency and pupil characteristics",
+            "summary": "This file contains data on the attainment of pupils in key stage 2 assessments in England, broken down by pupil residency and pupil characteristics.",
+            "status": "Published",
+            "latestVersion": {
+                "version": "1.2",
+                "published": "2026-09-15T15:19:06.451422+00:00",
+                "totalResults": 56706,
+                "file": {
+                    "id": "390ff24a-1265-40a7-8993-c75537648183"
+                },
+                "timePeriods": {
+                    "start": "2018/19",
+                    "end": "2025/26"
+                },
+                "geographicLevels": [
+                    "Local authority district",
+                    "National",
+                    "Regional"
+                ],
+                "filters": [
+                    "Disadvantage status",
+                    "Free school meal status",
+                    "Subjects"
+                ],
+                "indicators": [
+                    "Average progress score",
+                    "Average scaled score",
+                    "Lower confidence interval",
+                    "Number of average scaled score calculation",
+                    "Number of eligible pupils at the end of key stage 2",
+                    "Number of eligible pupils included in the progress measure",
+                    "Number of pupils absent",
+                    "Number of pupils disapplied",
+                    "Number of pupils just arrived or unable to access",
+                    "Number of pupils meeting the expected standard",
+                    "Number of pupils meeting the higher standard",
+                    "Number of pupils not achieved expected standard",
+                    "Number of pupils working at pre-key stage standard 1 in writing TA",
+                    "Number of pupils working at pre-key stage standard 2 in writing TA",
+                    "Number of pupils working at pre-key stage standard 3 in writing TA",
+                    "Number of pupils working at pre-key stage standard 4 in writing TA",
+                    "Number of pupils working at pre-key stage standard 5 in writing TA",
+                    "Number of pupils working at pre-key stage standard 6 in writing TA",
+                    "Number of pupils working at the engagement model or below pre-key stage standards in writing TA",
+                    "Number of pupils working below the standard",
+                    "Number of pupils working towards the expected standard in writing TA",
+                    "Number of schools",
+                    "Percentage of pupils absent",
+                    "Percentage of pupils disapplied",
+                    "Percentage of pupils just arrived or unable to access",
+                    "Percentage of pupils meeting the expected standard",
+                    "Percentage of pupils meeting the higher standard",
+                    "Percentage of pupils not achieved expected standard",
+                    "Percentage of pupils working at pre-key stage standard 1 in writing TA",
+                    "Percentage of pupils working at pre-key stage standard 2 in writing TA",
+                    "Percentage of pupils working at pre-key stage standard 3 in writing TA",
+                    "Percentage of pupils working at pre-key stage standard 4 in writing TA",
+                    "Percentage of pupils working at pre-key stage standard 5 in writing TA",
+                    "Percentage of pupils working at pre-key stage standard 6 in writing TA",
+                    "Percentage of pupils working at the engagement model or below pre-key stage standards in writing TA",
+                    "Percentage of pupils working below the standard",
+                    "Percentage of pupils working towards the expected standard in writing TA",
+                    "Sum of scaled scores",
+                    "Total number of progress scores",
+                    "Upper confidence interval"
+                ]
+            }
+        },
+        {
+            "id": "c62e9901-58a5-ba76-aa0d-5ee4ef269776",
+            "title": "Attainment by pupil characteristics",
+            "summary": "This file contains data on the attainment of pupils in key stage 2 assessments in England, broken down by pupil characteristics.",
+            "status": "Published",
+            "latestVersion": {
+                "version": "1.2",
+                "published": "2026-09-15T15:19:06.395765+00:00",
+                "totalResults": 89160,
+                "file": {
+                    "id": "9e5d9e63-06fe-4bd8-ac8e-c91e2bd69c89"
+                },
+                "timePeriods": {
+                    "start": "2015/16",
+                    "end": "2025/26"
+                },
+                "geographicLevels": [
+                    "National"
+                ],
+                "filters": [
+                    "Disadvantage status",
+                    "First language status",
+                    "Free school meal status",
+                    "Minor ethnic group",
+                    "Month of birth",
+                    "sex",
+                    "Special education needs provision",
+                    "Special education primary need",
+                    "Subjects"
+                ],
+                "indicators": [
+                    "Average progress score",
+                    "Average scaled score",
+                    "Lower confidence interval",
+                    "Number of average scaled score calculation",
+                    "Number of eligible pupils at the end of key stage 2",
+                    "Number of eligible pupils included in the progress measure",
+                    "Number of pupils absent",
+                    "Number of pupils disapplied",
+                    "Number of pupils just arrived or unable to access",
+                    "Number of pupils meeting the expected standard",
+                    "Number of pupils meeting the higher standard",
+                    "Number of pupils not achieved expected standard",
+                    "Number of pupils unable to access",
+                    "Number of pupils with early development of the expected standard in writing TA",
+                    "Number of pupils with foundations of the expected standard in writing TA",
+                    "Number of pupils with growing development of the expected standard in writing TA",
+                    "Number of pupils working at pre-key stage standard 1 in writing TA",
+                    "Number of pupils working at pre-key stage standard 2 in writing TA",
+                    "Number of pupils working at pre-key stage standard 3 in writing TA",
+                    "Number of pupils working at pre-key stage standard 4 in writing TA",
+                    "Number of pupils working at pre-key stage standard 5 in writing TA",
+                    "Number of pupils working at pre-key stage standard 6 in writing TA",
+                    "Number of pupils working at the engagement model or below pre-key stage standards in writing TA",
+                    "Number of pupils working below the interim pre-key stage standards in writing TA",
+                    "Number of pupils working below the standard",
+                    "Number of pupils working towards the expected standard in writing TA",
+                    "Number of schools",
+                    "Percentage of pupils absent",
+                    "Percentage of pupils disapplied",
+                    "Percentage of pupils just arrived or unable to access",
+                    "Percentage of pupils meeting the expected standard",
+                    "Percentage of pupils meeting the higher standard",
+                    "Percentage of pupils not achieved expected standard",
+                    "Percentage of pupils unable to access",
+                    "Percentage of pupils with early development of the expected standard in writing TA",
+                    "Percentage of pupils with foundations of the expected standard in writing TA",
+                    "Percentage of pupils with growing development of the expected standard in writing TA",
+                    "Percentage of pupils working at pre-key stage standard 1 in writing TA",
+                    "Percentage of pupils working at pre-key stage standard 2 in writing TA",
+                    "Percentage of pupils working at pre-key stage standard 3 in writing TA",
+                    "Percentage of pupils working at pre-key stage standard 4 in writing TA",
+                    "Percentage of pupils working at pre-key stage standard 5 in writing TA",
+                    "Percentage of pupils working at pre-key stage standard 6 in writing TA",
+                    "Percentage of pupils working at the engagement model or below pre-key stage standards in writing TA",
+                    "Percentage of pupils working below the interim pre-key stage standards in writing TA",
+                    "Percentage of pupils working below the standard",
+                    "Percentage of pupils working towards the expected standard in writing TA",
+                    "Sum of scaled scores",
+                    "Total number of progress scores",
+                    "Upper confidence interval"
+                ]
+            }
+        },
+        {
+            "id": "c52e9901-e8ef-0376-b9e9-59abfb4db747",
+            "title": "Attainment by parliamentary constituency",
+            "summary": "This file contains data on the attainment of pupils in key stage 2 assessments in England, broken down by parliamentary constituency.",
+            "status": "Published",
+            "latestVersion": {
+                "version": "1.2",
+                "published": "2026-09-15T15:19:06.315963+00:00",
+                "totalResults": 19584,
+                "file": {
+                    "id": "c40da17f-b156-4663-8613-4decd18445aa"
+                },
+                "timePeriods": {
+                    "start": "2018/19",
+                    "end": "2025/26"
+                },
+                "geographicLevels": [
+                    "National",
+                    "Parliamentary constituency"
+                ],
+                "filters": [
+                    "Subjects"
+                ],
+                "indicators": [
+                    "Average progress score",
+                    "Average scaled score",
+                    "Lower confidence interval",
+                    "Number of average scaled score calculation",
+                    "Number of eligible pupils at the end of key stage 2",
+                    "Number of eligible pupils included in the progress measure",
+                    "Number of pupils absent",
+                    "Number of pupils disapplied",
+                    "Number of pupils just arrived or unable to access",
+                    "Number of pupils meeting the expected standard",
+                    "Number of pupils meeting the higher standard",
+                    "Number of pupils not achieved expected standard",
+                    "Number of pupils working at pre-key stage standard 1 in writing TA",
+                    "Number of pupils working at pre-key stage standard 2 in writing TA",
+                    "Number of pupils working at pre-key stage standard 3 in writing TA",
+                    "Number of pupils working at pre-key stage standard 4 in writing TA",
+                    "Number of pupils working at pre-key stage standard 5 in writing TA",
+                    "Number of pupils working at pre-key stage standard 6 in writing TA",
+                    "Number of pupils working at the engagement model or below pre-key stage standards in writing TA",
+                    "Number of pupils working below the standard",
+                    "Number of pupils working towards the expected standard in writing TA",
+                    "Number of schools",
+                    "Percentage of pupils absent",
+                    "Percentage of pupils disapplied",
+                    "Percentage of pupils just arrived or unable to access",
+                    "Percentage of pupils meeting the expected standard",
+                    "Percentage of pupils meeting the higher standard",
+                    "Percentage of pupils not achieved expected standard",
+                    "Percentage of pupils working at pre-key stage standard 1 in writing TA",
+                    "Percentage of pupils working at pre-key stage standard 2 in writing TA",
+                    "Percentage of pupils working at pre-key stage standard 3 in writing TA",
+                    "Percentage of pupils working at pre-key stage standard 4 in writing TA",
+                    "Percentage of pupils working at pre-key stage standard 5 in writing TA",
+                    "Percentage of pupils working at pre-key stage standard 6 in writing TA",
+                    "Percentage of pupils working at the engagement model or below pre-key stage standards in writing TA",
+                    "Percentage of pupils working below the standard",
+                    "Percentage of pupils working towards the expected standard in writing TA",
+                    "Sum of scaled scores",
+                    "Total number of progress scores",
+                    "Upper confidence interval"
+                ]
+            }
+        }
+    ]
+}
