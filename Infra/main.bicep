@@ -115,4 +115,14 @@ resource functionApp 'Microsoft.Web/sites@2025-03-01' = {
       }
     }
   }
+  resource configAppSettings 'config' = {
+    name: 'appSettings'
+    properties: {
+      AzureWebJobsStorage_accountName: storage.name
+      AzureWebJobsStorage_credential: 'managedIdentity'
+      AzureWebJobsStorage_clientId: userAssignedIdentity.properties.clientId
+      APPINSIGHTS_INSTRUMENTATIONKEY: applicationInsights.properties.InstrumentationKey
+      APPLICATIONINSIGHTS_AUTHENTICATION_STRING: 'ClientId=${userAssignedIdentity.properties.clientId};Authorization=AAD'
+    }
+  }
 }
