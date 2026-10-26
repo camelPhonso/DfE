@@ -11,6 +11,28 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v2
+
+      - name: Check for Infrastructure changes
+        id: changes
+        run: |
+          BASE_SHA="${{ github.event.pull_request.base.sha }}"
+          if ! MERGE_BASE=$(git merge-base "$BASE_SHA" HEAD); then
+            echo "::error::Could not compute merge-base of $BASE_SHA and HEAD."
+            exit 1
+          fi
+          if ! CHANGED=$(git diff --name-only "$BASE_SHA" HEAD); then
+            echo "::error::git diff against merge_base $MERGE_BASE failed."
+            exit 1
+          fi
+          NON_INFRA=$(echo "$CHANGED" | gre -vE '(^Infra/|\.bicep)' || true)
+          if [ -n "$CHANGED" ] && [ -z "$NON_INFRA" ]; then
+            echo "run=false" >> "$GITHUB_OUTPUT"
+            echo "No Infrastructure changes - skipping step. Changed files:"
+            echo "$CHANGED"
+          else
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            echo "Infrastructure changes detected - running check."
     
       - name: lint
+        if: steps.changes.outputs.run == 'true'
         run: az bicep build --file Infra/main.bicep
