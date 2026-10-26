@@ -1,0 +1,26 @@
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '10.x'
+
+      - name: Restore dependencies
+        run: dotnet restore ./functionApp.sln
+        
+      - name: Build the solution
+        run: dotnet build ./functionApp.sln --configuration Release --no-restore
+
+      - name: Run unit tests
+        run: dotnet test ./functionApp.Test/functionApp.Test.csproj --configuration Release --no-build
