@@ -20,7 +20,7 @@ jobs:
         run: dotnet restore ./functionApp.sln.slnx
         
       - name: Build the solution
-        run: dotnet build ./functionApp.sln --configuration Release --no-restore
+        run: dotnet build ./functionApp.sln.slnx --configuration Release --no-restore
 
       - name: Run unit tests
         run: dotnet test ./functionApp.Test/functionApp.Test.csproj --configuration Release --no-build
