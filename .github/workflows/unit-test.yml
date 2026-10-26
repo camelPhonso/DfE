@@ -17,7 +17,7 @@ jobs:
           dotnet-version: '10.x'
 
       - name: Restore dependencies
-        run: dotnet restore ./functionApp.sln
+        run: dotnet restore ./functionApp.sln.slnx
         
       - name: Build the solution
         run: dotnet build ./functionApp.sln --configuration Release --no-restore
