@@ -1,3 +1,4 @@
+name: Test Infrastructure Changes
 on:
   pull_request:
     branches:
@@ -12,4 +13,4 @@ jobs:
         uses: actions/checkout@v2
     
       - name: lint
-        run: bicep lint Infra/main.bicep
+        run: az build --file Infra/main.bicep
