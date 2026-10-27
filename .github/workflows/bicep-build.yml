@@ -32,6 +32,7 @@ jobs:
           else
             echo "run=true" >> "$GITHUB_OUTPUT"
             echo "Infrastructure changes detected - running check."
+          fi
     
       - name: lint
         if: steps.changes.outputs.run == 'true'
