@@ -20,7 +20,7 @@ jobs:
             echo "::error::Could not compute merge-base of $BASE_SHA and HEAD."
             exit 1
           fi
-          if ! CHANGED=$(git diff --name-only "$BASE_SHA" HEAD); then
+          if ! CHANGED=$(git diff --name-only "$MERGE_BASE" HEAD); then
             echo "::error::git diff against merge_base $MERGE_BASE failed."
             exit 1
           fi
