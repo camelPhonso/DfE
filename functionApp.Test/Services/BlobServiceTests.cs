@@ -23,10 +23,7 @@ public class BlobServiceTests
     public async Task IsVersionMatch_GivenAVersionMatchingTheCurrentlyStored_ReturnsTrue()
     {
         // Arrange
-        var testPublication = new PublicationsResponse(new List<PublicationDto>
-        {
-            new PublicationDto("test", "Completely Fake", new VersionDto("v1.3", 2))
-        });
+        var testPublication = new PublicationDto("test", "Completely Fake", new VersionDto("v1.3", 2));
         var blobData = BinaryData.FromString(JsonSerializer.Serialize(testPublication));
         var downloadResult = BlobsModelFactory.BlobDownloadResult(content: blobData);
         var response = Response.FromValue(downloadResult, Mock.Of<Response>());
@@ -42,7 +39,7 @@ public class BlobServiceTests
         var service = new BlobService(_mockClient.Object, NullLoggerFactory.Instance);
 
         // Act
-        bool returned = await service.IsVersionMatch(testPublication.Results[0].LatestVersion.Version);
+        bool returned = await service.IsVersionMatch(testPublication.LatestVersion.Version);
 
         // Assert
         mockBlobClient.Verify(c => c.DownloadContentAsync(), Times.Once());
