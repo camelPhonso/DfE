@@ -8,7 +8,7 @@ services:
       - 10001:10001
       - 10002:10002
     volumes:
-      - ./azurite-data:/data
+      - ../azurite-data:/data
     command: azurite --blobHost 0.0.0.0 --queueHost 0.0.0.0 --location /data --loose --skipApiVersionCheck
     restart: unless-stopped
   
