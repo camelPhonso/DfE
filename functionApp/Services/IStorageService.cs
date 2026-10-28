@@ -1,8 +1,10 @@
+using Spike.Data;
+
 namespace Spike.Services;
 
 public interface IStorageService
 {
-    public Task UploadPublication(string publication);
+    public Task UploadPublication(PublicationDto publication);
 
     public Task UploadDataSet(string dataSet);
 

@@ -4,6 +4,9 @@ using Azure.Storage.Blobs;
 using Azure;
 using Azure.Storage.Blobs.Models;
 using Microsoft.Extensions.Logging.Abstractions;
+using System.Text.Json.Serialization;
+using System.Text.Json;
+using Spike.Data;
 
 namespace functionApp.Test;
 
@@ -16,29 +19,27 @@ public class BlobServiceTests
         _mockClient = new Mock<BlobServiceClient>();
     }
 
-    [Theory]
-    [InlineData("1.2")]
-    [InlineData("v3.5")]
-    [InlineData("V2-beta")]
-    public async Task IsVersionMatch_GivenAVersionMatchingTheCurrentlyStored_ReturnsTrue(string theoreticalVersion)
+    [Fact]
+    public async Task IsVersionMatch_GivenAVersionMatchingTheCurrentlyStored_ReturnsTrue()
     {
         // Arrange
-        var blobData = BinaryData.FromString(theoreticalVersion);
+        var testPublication = new PublicationDto("test", "Completely Fake", new VersionDto("v1.3", 2));
+        var blobData = BinaryData.FromString(JsonSerializer.Serialize(testPublication));
         var downloadResult = BlobsModelFactory.BlobDownloadResult(content: blobData);
         var response = Response.FromValue(downloadResult, Mock.Of<Response>());
 
         var mockBlobClient = new Mock<BlobClient>();
-        mockBlobClient .Setup(x => x.DownloadContentAsync()) .ReturnsAsync(response);
+        mockBlobClient.Setup(x => x.DownloadContentAsync()).ReturnsAsync(response);
 
         var mockContainerClient = new Mock<BlobContainerClient>();
-        mockContainerClient .Setup(x => x.GetBlobClient(It.IsAny<string>())) .Returns(mockBlobClient.Object);
+        mockContainerClient.Setup(x => x.GetBlobClient(It.IsAny<string>())).Returns(mockBlobClient.Object);
 
-        _mockClient .Setup(x => x.GetBlobContainerClient(It.IsAny<string>())) .Returns(mockContainerClient.Object);
+        _mockClient.Setup(x => x.GetBlobContainerClient(It.IsAny<string>())).Returns(mockContainerClient.Object);
 
         var service = new BlobService(_mockClient.Object, NullLoggerFactory.Instance);
 
         // Act
-        bool returned = await service.IsVersionMatch(theoreticalVersion);
+        bool returned = await service.IsVersionMatch(testPublication.LatestVersion.Version);
 
         // Assert
         mockBlobClient.Verify(c => c.DownloadContentAsync(), Times.Once());
@@ -49,7 +50,7 @@ public class BlobServiceTests
     public async Task IsVersionMatch_WhenStorageIsEmpty_ReturnsFalse()
     {
         // Arrange
-        var blobData = BinaryData.FromString(string.Empty);
+        var blobData = BinaryData.FromString(""); // binary data stream with length zero to simulate an empty blob
         var downloadResult = BlobsModelFactory.BlobDownloadResult(content: blobData);
         var response = Response.FromValue(downloadResult, Mock.Of<Response>());
 
