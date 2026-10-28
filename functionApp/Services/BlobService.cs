@@ -1,6 +1,8 @@
+using System.Text.Json;
 using System.Text.RegularExpressions;
 using Azure.Storage.Blobs;
 using Microsoft.Extensions.Logging;
+using Spike.Data;
 
 namespace Spike.Services;
 
@@ -45,10 +47,18 @@ public class BlobService : IStorageService
     {
         var blob = _blobContainer.GetBlobClient("publications");
         var blobContent = await blob.DownloadContentAsync();
-        BinaryData content = blobContent.Value.Content;
-        var storedVersion = content.ToString();
+        if(blobContent.Value.Content.IsEmpty)
+        {
+            return false;
+        }
+        
+        PublicationsResponse? storedPublication = JsonSerializer.Deserialize<PublicationsResponse>(blobContent.Value.Content);
+        if(storedPublication is null)
+        {
+            return false;
+        }
 
-        bool isMatch = string.Equals(publishedVersion, storedVersion);
+        bool isMatch = string.Equals(publishedVersion, storedPublication.Results[0].LatestVersion.Version);
 
         return isMatch;
     }
