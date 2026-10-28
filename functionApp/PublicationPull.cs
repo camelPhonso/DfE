@@ -1,6 +1,7 @@
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Extensions.Logging;
 using Spike.Services;
+using Spike.Data;
 
 namespace Spike.PublicationPull;
 
@@ -24,23 +25,27 @@ public class PublicationPull
 
         try
         {
-            var publishedVersion = await _http.GetLatestVersion("1");
-            var isCurrent = _storage.IsVersionMatch(publishedVersion);
-            
-            if (isCurrent.Result)
+            PublicationsResponse publishedVersion = await _http.GetLatestVersion("1");
+            bool isCurrent = await _storage.IsVersionMatch(publishedVersion.Results[0].LatestVersion.Version);
+
+            if (isCurrent)
             {
-                _logger.LogInformation("Currently published version matched the data already stored: {version}", publishedVersion);
+                _logger.LogInformation("Published version matched the records in storage - {version}. Ending process.", publishedVersion.Results[0].LatestVersion.Version);
                 return;
             }
+            else
+            {
+                _logger.LogInformation("Processing new published version, {version}", publishedVersion.Results[0].LatestVersion.Version);
+                await _storage.UploadPublication(publishedVersion.Results[0]);
+                
+                string returnedDataSet = await _http.GetDataSet("1");
+                await _storage.UploadDataSet(returnedDataSet);
+            }
 
-            await _storage.UploadPublication(publishedVersion);
-
-            var returnedDataSet = await _http.GetDataSet("1");
-            await _storage.UploadDataSet(returnedDataSet);
         }
         catch (Exception e)
         {
-            _logger.LogError("Error uploading to storage: {errorMessage}", e.Message);
+            _logger.LogError("Error processing new Publication: {errorMessage}", e.Message);
         } 
         
         if (myTimer.ScheduleStatus is not null)

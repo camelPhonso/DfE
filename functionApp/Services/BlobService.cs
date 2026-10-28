@@ -17,12 +17,12 @@ public class BlobService : IStorageService
         _logger = factory.CreateLogger<BlobService>();
     }
 
-    public async Task UploadPublication(string publication)
+    public async Task UploadPublication(PublicationDto publication)
     {
         try
         {
             var blob = _blobContainer.GetBlobClient("publications");
-            await blob.UploadAsync(BinaryData.FromString(publication), overwrite: true);
+            await blob.UploadAsync(BinaryData.FromString(JsonSerializer.Serialize(publication)), overwrite: true);
         }
         catch
         {
@@ -52,13 +52,13 @@ public class BlobService : IStorageService
             return false;
         }
         
-        PublicationsResponse? storedPublication = JsonSerializer.Deserialize<PublicationsResponse>(blobContent.Value.Content);
+        PublicationDto? storedPublication = JsonSerializer.Deserialize<PublicationDto>(blobContent.Value.Content.ToString(), new JsonSerializerOptions{ PropertyNameCaseInsensitive = true });
         if(storedPublication is null)
         {
             return false;
         }
 
-        bool isMatch = string.Equals(publishedVersion, storedPublication.Results[0].LatestVersion.Version);
+        bool isMatch = string.Equals(publishedVersion, storedPublication.LatestVersion.Version);
 
         return isMatch;
     }
